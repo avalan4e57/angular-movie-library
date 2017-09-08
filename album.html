@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#addMovie">
+            <span>Show add movie form</span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="addMovie">
+          <ul class="nav navbar-nav">
+            <li>Video title: <input ng-model="title" required></li>
+            <li>YouTube URL: <input ng-model="url" required></li>
+            <li><button ng-click="addMovie(album, title, url)" class="addMovie">Add Movie</button></li>
+          </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="descr">{{ album.descr }}</div>
+<div class="movies-list">
+    <ul ng-repeat="movie in album.movies">
+        <li>
+            <div>{{ movie.title }}</div>
+            <iframe
+                ng-src="{{ movie.url | trustUrl}}">
+            </iframe>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,19 @@
+{
+    "fiction": {
+        "descr": "Fiction movies",
+        "movies": [
+            {
+                "title": "Star Wars Episode I: The Phantom Menace - Trailer",
+                "url": "https://www.youtube.com/embed/bD7bpG-zDJQ"
+            }
+        ]
+    },
+    "documentary": {
+        "descr": "Documentary movies",
+        "movies": []
+    },
+    "porn": {
+        "descr": "Awesome movies",
+        "movies": []
+    }
+}

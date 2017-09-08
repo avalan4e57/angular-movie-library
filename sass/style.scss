@@ -1,0 +1,20 @@
+@import 'bootstrap';
+@import 'navbar-fixed-side';
+
+ul {
+    list-style: none;
+}
+
+@media (min-width: 992px) {
+    iframe {
+        width: 420px;
+        height: 315px;
+    }
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 90%;
+        height: 70%;
+    }
+}
